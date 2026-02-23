@@ -32,7 +32,11 @@ constexpr uint FAKE_SELECT_LEX_ID= UINT_MAX;
 #define VALIDITY_ASSERT(x) if (!(x)) this->invalid_json= true;
 #else
 #include "sql_select.h"
+#ifndef NDEBUG
 #define VALIDITY_ASSERT(x) DBUG_ASSERT(x)
+#else
+#define VALIDITY_ASSERT(x) do { } while (0)
+#endif
 #endif
 
 #include <type_traits>
