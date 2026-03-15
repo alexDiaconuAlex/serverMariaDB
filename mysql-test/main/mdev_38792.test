@@ -1,0 +1,8 @@
+SET sql_mode='ORACLE';
+
+SET lc_time_names='en_US';
+
+SELECT TO_DATE('2002 - AD', 'YYYY AD');
+SELECT TO_DATE('2024---01---01', 'YYYYMMDD');
+SELECT TO_DATE('2024 . 05 . 10', 'YYYYMMDD');
+SELECT TO_DATE('2002 - February - 10', 'YYYY MONTH DD');
