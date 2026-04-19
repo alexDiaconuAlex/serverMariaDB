@@ -1,0 +1,2 @@
+Optimize_for_get_all_tables():
+    Deci permisiunile fiecarui utilizator le iau din thread-ul curent (thd);
